@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="title">
+  <text>智力拼图</text>
+</view>
+<view class="container">
+  <view class="row" wx:for="{{num}}" wx:for-item="item" wx:for-index="index">
+    <button class="btn {{item == 9?'active':''}}" catchtap='onMoveTap'  data-item="{{item}}" data-index="{{index}}">{{item}}</button>
+  </view>
+</view>
+
+<view class="init">
+  <text class="time">{{time}}秒</text>
+  <button catchtap='timeBegin' type="primary">开始</button>
+  <button catchtap='timeStop' type="warn">暂停</button>
+</view>

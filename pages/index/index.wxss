@@ -1,0 +1,46 @@
+/**index.wxss**/
+.title{
+  text-align:center;
+  font-size:28rpx;
+  line-height:3;
+}
+.container{
+  width:744rpx;
+  height:744rpx;
+  background:#fff;
+  overflow: hidden;
+}
+.btn{
+  width:248rpx;
+  height:248rpx;
+  line-height:248rpx;
+  color:#666;
+  font-size:124rpx;
+}  
+
+.active{
+  color:transparent!important;
+  background:transparent!important;
+}
+
+.row{
+  width:33.33333%;
+  float:left;
+}
+
+.init{
+  text-align:center;
+}
+
+.init button{
+  width:50%;
+  display:inline-block
+}
+
+.time{
+  color:#333;
+  font-size:42rpx;
+  line-height:2;
+  width:100%;
+  display:inline-block;
+}
