@@ -78,7 +78,10 @@ init:function(){
     }
   }
   
-  移动后，将所点击块与空白格互换在数组中的位置，并判断目前的数组是否满足游戏成功的条件，判断数组相等，我这里把数组转化成字符串做的比较游戏成功：success: function () {
+  移动后，将所点击块与空白格互换在数组中的位置，并判断目前的数组是否满足游戏成功的条件，判断数组相等，我这里把数组转化成字符串做的比较
+  
+  游戏成功：
+  success: function () {
     var that = this;
     wx.showToast({
       title: '闯关成功',
@@ -88,7 +91,9 @@ init:function(){
       }
     })
   }
-  游戏成功，弹出交互反馈窗口，并初始化重新打乱数组定时器： timeCount:function(){
+  游戏成功，弹出交互反馈窗口，并初始化重新打乱数组
+  
+  定时器： timeCount:function(){
     var that = this;
     var timer = that.data.time;
     that.setData({
@@ -100,7 +105,9 @@ init:function(){
       },1000)
     })
   }
-  开始结束游戏： timeBegin:function(){
+  
+  开始结束游戏：
+  timeBegin:function(){
     clearInterval(this.data.t);
     this.setData({
       time:0
